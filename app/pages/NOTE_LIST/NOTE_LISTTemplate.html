@@ -1,0 +1,45 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="NOTE_LIST" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <button class="button button-positive button-icon button-inline button-clear icon ion-plus-circled"
+    navigate-to="NOTE_CREATE">
+    </button>
+    <button class="button button-positive button-icon button-inline button-clear icon ion-ios-refresh-outline"
+    ng-click="init()">
+    </button>
+    <div class="card">
+        <div class="item-divider item">
+            <div>
+                <div class="row">
+                    <div class="col col-75">
+                        <p>
+                            Note
+                        </p>
+                    </div>
+                    <div class="col">
+                        <ion-spinner ng-show="showSpinner1">
+                        </ion-spinner>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" ng-repeat="NOTE in NOTES">
+            <div>
+                <div class="row">
+                    <div class="col col-75" ng-click="DETAILS(NOTE.DBID)">
+                        <p>
+                            {{NOTE.NOTE}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <button class="button button-positive button-icon button-inline button-clear icon ion-edit"
+                        ng-click="EDIT(NOTE.DBID)">
+                        </button>
+                        <button class="button button-positive button-icon button-inline button-clear icon ion-android-delete"
+                        ng-click="DELETE(NOTE.DBID)">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

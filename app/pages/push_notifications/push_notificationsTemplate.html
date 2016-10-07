@@ -1,0 +1,27 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="push_notifications" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <button class="button button-block" ng-click="PushRegisterDevice()">
+        PushRegisterDevice
+    </button>
+    <p>
+        {{Push.token}}
+    </p>
+    <p>
+        {{Push.deviceID}}
+    </p>
+    <p>
+        {{Push.timeZone}}
+    </p>
+    <p>
+        {{Push.type}}
+    </p>
+    <p>
+        {{Push._createdAt}}
+    </p>
+    <p>
+        {{Push._updatedAt}}
+    </p>
+    <p>
+        {{Push._id}}
+    </p>
+</div>

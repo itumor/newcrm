@@ -1,0 +1,81 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="EVENT_CREATE_clone_1" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-divider item">
+            Create Event
+        </div>
+        <div class="item">
+            <form name="myForm">
+                <div class="list">
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'TITLE' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'TITLE' |translate}}" value="" ng-model="EVENT.TITLE">
+                    </div>
+                    <h6 ng-show="myForm.userName.$error.required" class="assertive">
+                        Required
+                    </h6>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'TYPE'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'TYPE'|translate}}" value="" ng-model="EVENT.TYPE">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'DESCRIPTION' | translate }}
+                        </span>
+                        <input type="text" placeholder="{{'DESCRIPTION' | translate }}" value="" ng-model="EVENT.DESCRIPTION">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'SEND_TO'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'SEND_TO'|translate}}" value="" ng-model="EMAIL.to">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'SUBJECT'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'SUBJECT'|translate}}" value="" ng-model="EMAIL.subject"
+                        required="" name="SUBJECT">
+                    </div>
+                    <label class="item item-input">
+                        <textarea placeholder="{{'MESSAGE_BODY'|translate}}" ng-model="EMAIL.body"></textarea>
+                    </label>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'START_DATE'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'START_DATE'|translate}}" value="" ng-model="EVENT.STARTDATE">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'End_DATE'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'End_DATE'|translate}}" value="" ng-model="EVENT.ENDDATE"
+                        name="CITY">
+                    </div>
+                    <div class="item item-input item-select ">
+                        <div class="input-label">
+                            {{ 'STATUS'| translate }}
+                        </div>
+                        <select ng-model="LEAD.STATUS">
+                            <option value="Active">
+                                {{'ACTIVE'|translate}}
+                            </option>
+                            <option value="Inactive">
+                                {{'INACTIVE'|translate}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button button-positive button-block button-clear icon-right ion-checkmark"
+                ng-click="SENDMAIL()" ng-disabled="myForm.userName.$error.required || myForm.LAST_NAME.$error.required">
+                    submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

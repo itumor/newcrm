@@ -1,0 +1,55 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="CLIENT_LIST" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-android-add-circle positive" navigate-to="CLIENT_CREATE">
+    </i>
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-ios-refresh-outline positive" ng-click="init()">
+    </i>
+    <div class="card">
+        <div class="item-divider item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'NAME' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{'STATUS'| translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <ion-spinner ng-show="showSpinner1">
+                        </ion-spinner>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" ng-repeat="CLIENT in CLIENTS">
+            <div>
+                <div class="row">
+                    <div class="col" ng-click="DETAILS(CLIENT.DBID)">
+                        <p ng-click="CLIENT.DBID">
+                            {{CLIENT.NAME}}
+                        </p>
+                    </div>
+                    <div class="col" ng-click="DETAILS(CLIENT.DBID)">
+                        <p>
+                            {{CLIENT.STATUS}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <i class="aio-icon-component
+                        aio-icon-component-md icon ion-edit positive" ng-click="EDIT(CLIENT.DBID)">
+                        </i>
+                        <i class="aio-icon-component
+                        aio-icon-component-md icon ion-android-delete positive" ng-click="confirmDelete(CLIENT.DBID)">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

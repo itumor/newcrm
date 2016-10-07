@@ -1,0 +1,68 @@
+<div ng-controller="LEAD_LIST_Oracle" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="" on-scroll-complete="init()" menu-close="">
+        <button class="button button-positive button-icon button-inline button-clear icon ion-plus-circled"
+        navigate-to="LEAD_CREATE_Oracle">
+        </button>
+        <button class="button button-positive button-icon button-inline button-clear icon ion-ios-refresh-outline"
+        ng-click="init()">
+        </button>
+        <div class="card">
+            <div class="item-divider item">
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                NAME
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                STATUS
+                            </p>
+                        </div>
+                        <div class="col col-25">
+                            <ion-spinner ng-show="showSpinner2">
+                            </ion-spinner>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" ng-repeat="Lead in LEADS">
+                <div>
+                    <div class="row">
+                        <div class="col" ng-click="details(Lead.DBID)">
+                            <p>
+                                {{Lead.NAME}}
+                            </p>
+                        </div>
+                        <div class="col" ng-click="details(Lead.DBID)">
+                            <p>
+                                {{Lead.STATUS}}
+                            </p>
+                        </div>
+                        <div class="col col-25">
+                            <button class="button button-positive button-icon button-inline button-clear icon ion-edit"
+                            ng-click="edit_details(Lead.DBID)">
+                            </button>
+                            <button class="button button-positive button-icon button-inline button-clear icon ion-android-delete"
+                            ng-click="confirmDelete(Lead.DBID)">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-bar bar-light">
+            <button class="button button-positive button-block">
+                Contacts
+            </button>
+            <button class="button button-positive button-block">
+                Events
+            </button>
+            <button class="button button-positive button-block">
+                Proposals
+            </button>
+        </div>
+    </ion-content>
+</div>

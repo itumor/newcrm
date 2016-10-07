@@ -1,0 +1,55 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="USER_CONTACTS" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-android-person-add positive" ng-click="CREATE()">
+    </i>
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-ios-refresh positive" ng-click="init()">
+    </i>
+    <div class="card">
+        <div class="item-divider item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Name
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Main Contact?
+                        </p>
+                    </div>
+                    <div class="col">
+                        <ion-spinner ng-show="showSpinner1">
+                        </ion-spinner>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" ng-repeat="CONTACT in CONTACTS">
+            <div>
+                <div class="row">
+                    <div class="col" ng-click="DETAILS(CONTACT.DBID)">
+                        <p>
+                            {{CONTACT.FULLNAME}}
+                        </p>
+                    </div>
+                    <div class="col" ng-click="DETAILS(CONTACT.DBID)">
+                        <p>
+                            {{CONTACT.MAIN_CONTACT}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <i class="aio-icon-component
+                        aio-icon-component-md icon ion-edit positive" ng-click="EDIT(CONTACT.DBID)">
+                        </i>
+                        <i class="aio-icon-component
+                        aio-icon-component-md icon ion-android-delete positive" ng-click="deleteConfirm(CONTACT.DBID)">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

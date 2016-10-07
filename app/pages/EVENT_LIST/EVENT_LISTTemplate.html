@@ -1,0 +1,53 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="EVENT_LIST" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-android-add-circle positive" ng-click="CREATE()">
+    </i>
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-ios-refresh positive" ng-click="init()">
+    </i>
+    <div class="card">
+        <div class="item-divider item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Description
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Company
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Start Date
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" ng-repeat="EVENT in EVENTS">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p ng-click="DETAILS(EVENT.DBID)">
+                            {{EVENT.DESCRIPTION}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p ng-click="DETAILS(EVENT.DBID)">
+                            {{companies.EVENT.DBID}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p ng-click="DETAILS(EVENT.DBID)">
+                            {{EVENT.STARTDATE}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

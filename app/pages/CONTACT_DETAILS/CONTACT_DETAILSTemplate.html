@@ -1,0 +1,309 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="CONTACT_DETAILS" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-edit positive" ng-click="EDIT()">
+    </i>
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-android-delete positive" ng-click="confirmDelete()">
+    </i>
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-document-text positive" ng-click="NOTES()">
+    </i>
+    <div class="card">
+        <div class="item-divider item">
+            {{'CONTACT_DETAILS'|translate}}
+        </div>
+        <div class="item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{ 'Full_Name' |translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.FULLNAME}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'DESCRIPTION' | translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.DESCRIPTION}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{ 'STATUS'| translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.SOURCE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{ 'STATUS'| translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.STATUS}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'COMPANY ' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{leadname}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'Rlation ' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.LEAD_OR_CLIENT}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'TITLE' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.INDUSTRY}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'WEBSITE'| translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.WEBSITE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'RATING' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.RATING}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'PHONE_1'|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.PHONE_1}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'PHONE_2'|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.PHONE_2}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'E_MAIL' |translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.E_MAIL}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'ADDRESS' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.ADDRESS}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'REGION' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.REGION}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'CITY' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.CITY}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'COUNTRY'|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.COUNTRY}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'HEADCOUNT' | translate }}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.HEADCOUNT}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'DOB' |translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.DOB}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'TWITTER_ID' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.TWITTER_ID}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'INSTAGRAM_ID' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.INSTAGRAM_ID}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'FACEBOOK_ID'|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.FACEBOOK_ID}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'NOTES' | translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.NOTES}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'OWNER '|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.OWNER}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{'MAIN_CONTACT'|translate}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{CONTACT.MAIN_CONTACT}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

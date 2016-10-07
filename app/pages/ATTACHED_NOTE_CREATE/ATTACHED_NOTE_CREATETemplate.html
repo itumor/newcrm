@@ -1,0 +1,24 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="ATTACHED_NOTE_CREATE" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-divider item">
+            Create Note
+        </div>
+        <div class="item">
+            <form name="myForm">
+                <label class="item item-input">
+                    <textarea placeholder="Enter your note here" ng-model="NOTE.NOTE"></textarea>
+                </label>
+                <div class="list">
+                    <h6 ng-show="myForm.userName.$error.required" class="assertive">
+                        Required
+                    </h6>
+                </div>
+                <button class="button button-positive button-block button-clear icon-right ion-checkmark"
+                ng-click="CREATE()" ng-disabled="myForm.userName.$error.required || myForm.LAST_NAME.$error.required">
+                    {{'SUBMIT' |translate}}
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

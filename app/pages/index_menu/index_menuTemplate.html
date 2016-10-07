@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            index_menu
+        </title>
+        <script src="libs/angular/angular.min.js">
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
+        />
+        <link href="css/ionic/ionic.min.css" rel="stylesheet" />
+        <link href="css/appery-ui/appery-ui.css" rel="stylesheet" />
+        <link href="css/__aio_components.css" rel="stylesheet" />
+        <link href="css/CSS1.css" rel="stylesheet" />
+        <link href="css/calendar.min.css" rel="stylesheet" />
+        <link href="css/CSS_Calendar.css" rel="stylesheet" />
+        <link href="css/fullcalendar.print.css" rel="stylesheet" />
+        <link href="css/fullcalendar.css" rel="stylesheet" />
+        <link href="css/tab.css" rel="stylesheet" />
+        <link href="css/chart.css" rel="stylesheet" />
+        <script>
+                var require = {
+            urlArgs: window.navigator.userAgent.match(/Windows Phone/i) ? undefined : "bust=1474576996"
+        };
+        </script>
+        <script data-main="app/bootstrap" src="libs/requirejs/require.js">
+        </script>
+    </head>
+    
+    <body>
+        <div ng-controller="indexController" ng-cloak ng-init="init()">
+            <ion-side-menus>
+                <ion-side-menu-content>
+                    <ion-header-bar data-aio-id="header" class="huma bar bar-positive" ng-show="visionStatus.header">
+                        <div class="buttons">
+                            <button class="button button-icon button-block button-small icon ion-drag" menu-toggle=""
+                            ng-hide="true">
+                            </button>
+                        </div>
+                        <h1 class="title">
+                            {{ 'HEADER' | translate }}
+                        </h1>
+                        <div class="buttons">
+                        </div>
+                    </ion-header-bar>
+                    <div ng-view data-aio-id="ng-view" hasHeader hasBotTabs class="" menu-close="">
+                    </div>
+                    <div class="tabs tabs-positive" ng-show="showFlag">
+                        <a class="tab-item icon ion-chevron-left" href="javascript:void(0)" ng-show="" back-button="">
+                        Back
+                        </a><!--
+                        --><a class="tab-item" href="javascript:void(0)" ng-show="" navigate-to="LEAD_LIST_Oracle">
+                        List
+                        </a><!--
+                        --><a class="tab-item" href="javascript:void(0)" ng-show="" navigate-to="Contacts">
+                        Contacts
+                        </a><!--
+                        --><a class="tab-item" href="javascript:void(0)" ng-sho="" navigate-to="Events">
+                        Events
+                        </a><!--
+                        --><a class="tab-item" href="javascript:void(0)" ng-show="" ng-click="out()" navigate-to="Proposals">
+                        Proposals
+                        </a><!--
+                        --><a class="tab-item" href="javascript:void(0)" ng-s="" ng-click="out()" ng-hide="true">
+                        Sign Out
+                        </a>
+                    </div>
+                </ion-side-menu-content>
+                <ion-side-menu side='left' width='275' is-enabled="false" ng-hide="true">
+                    <img menu-close="" navigate-to="menu" width="" height="100px" src="files/images/no-image.jpg"
+                    class="img-default img-responsive" alt="Image error">
+                    <button class="button button-positive button-block button-clear icon-left ion-person"
+                    menu-close="" ng-click="Headerf(&quot;Contact&quot;)" navigate-to="LEAD">
+                        Contact
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-link"
+                    menu-close="" ng-click="Headerf(&quot;Lead&quot;)" navigate-to="Contact_LIST">
+                        Lead
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-briefcase"
+                    menu-close="" ng-click="Headerf(&quot;Client&quot;)" navigate-to="Account_LIST">
+                        Client
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-soup-can-outline"
+                    menu-close="" ng-click="Headerf(&quot;Product&quot;)" navigate-to="Product_LIST">
+                        Product
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-arrow-graph-up-left"
+                    menu-close="" ng-click="Headerf(&quot;Proposal&quot;)" navigate-to="Opportunity_LIST">
+                        Proposal
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-calendar"
+                    menu-close="" ng-click="Headerf(&quot;Events&quot;)" navigate-to="Events_LIST">
+                        Events
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-ios-gear"
+                    menu-close="" ng-click="Headerf(&quot;Setup&quot;)" navigate-to="Setup_Menu">
+                        Setup
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-android-bicycle"
+                    menu-close="" ng-click="Headerf(&quot;Client&quot;)" navigate-to="Client_LIST" ng-hide="true">
+                        Client
+                    </button>
+                </ion-side-menu>
+            </ion-side-menus>
+        </div>
+    </body>
+
+</html>

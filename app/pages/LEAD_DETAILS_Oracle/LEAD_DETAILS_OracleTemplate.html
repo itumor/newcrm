@@ -1,0 +1,290 @@
+<div ng-controller="LEAD_DETAILS_Oracle" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="">
+        <div class="button-bar">
+            <button class="button button-positive button-block icon ion-edit" ng-click="edit_details()">
+            </button>
+            <button class="button button-positive button-block icon ion-android-delete" ng-click="confirmDelete(LEAD.DBID)">
+            </button>
+            <button class="button button-positive button-block icon ion-android-contacts" ng-click="contacts(LEAD.DBID)">
+            </button>
+            <button class="button button-positive button-block icon ion-ios-calendar" ng-click="EVENTS(LEAD.DBID)">
+            </button>
+            <button class="button button-positive button-block icon ion-document-text" ng-click="NOTES()">
+            </button>
+        </div>
+        <div class="card">
+            <div class="item-divider item">
+                {{'LEAD_DETAIL'|translate}}
+            </div>
+            <div class="item">
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                NAME
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.NAME}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                SOURCE
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.SOURCE}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                NOTES
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.NOTES}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                STATUS
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.STATUS}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                INDUSTRY
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.INDUSTRY}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                ANN REVENUE
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.ANN_REVENUE}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                ID
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.ID}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                ADDRESS
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.ADDRESS}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                CITY
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.CITY}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                COUNTRY
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.COUNTRY}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                DESCRIPTION
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.DESCRIPTION}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                E_MAIL
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.E_MAIL}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                FACEBOOK ID
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.FACEBOOK_ID}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                HEADCOUNT
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.HEADCOUNT}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                INSTAGRAM ID
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.INSTAGRAM_ID}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                PHONE_1
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.PHONE_1}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                PHONE_2
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.PHONE_2}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                REGION
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.REGION}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                STREET
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.STREET}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                TWITTER_ID
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.TWITTER_ID}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                USER_ID
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.USER_ID}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                WEBSITE
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                {{LEAD.WEBSITE}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</div>

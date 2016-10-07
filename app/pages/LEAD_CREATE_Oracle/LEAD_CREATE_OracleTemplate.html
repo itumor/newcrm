@@ -1,0 +1,158 @@
+<div ng-controller="LEAD_CREATE_Oracle" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="" property="form" name="myForm">
+        <div class="card">
+            <div class="item-divider item">
+                {{'CREATE_LEAD'|translate}}
+            </div>
+            <div class="item">
+                <form name="myForm">
+                    <div class="list">
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'NAME' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'NAME' | translate}}" value="" ng-model="LEAD.NAME">
+                        </div>
+                        <h6 ng-show="myForm.userName.$error.required" class="assertive">
+                            Required
+                        </h6>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'SOURCE' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'SOURCE' | translate}}" value="" ng-model="LEAD.SOURCE">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'NOTES' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'NOTES' | translate}}" value="" ng-model="LEAD.NOTES">
+                        </div>
+                        <div class="item item-input item-select ">
+                            <div class="input-label">
+                                {{ 'STATUS'| translate }}
+                            </div>
+                            <select ng-model="LEAD.STATUS">
+                                <option value="Active">
+                                    {{ 'ACTIVE'| translate }}
+                                </option>
+                                <option value="Inactive">
+                                    {{ 'INACTIVE'| translate }}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                INDUSTRY
+                            </span>
+                            <input type="text" placeholder="INDUSTRY" value="" ng-model="LEAD.INDUSTRY">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'ANN_REVENUE' |translate}}
+                            </span>
+                            <input type="text" placeholder="{{'ANN_REVENUE' |translate}}" value="" ng-model="LEAD.ANN_REVENUE"
+                            required="" name="ANN_REVENUE">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'ID'|translate}}
+                            </span>
+                            <input type="text" placeholder="{{'ID'|translate}}" value="" ng-model="LEAD.ID">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'ADDRESS' |translate}}
+                            </span>
+                            <input type="text" placeholder="{{'ADDRESS' |translate}}" value="" ng-model="LEAD.ADDRESS">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'CITY' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'CITY' | translate}}" value="" ng-model="LEAD.CITY"
+                            name="CITY">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'COUNTRY'|translate}}
+                            </span>
+                            <input type="text" placeholder="{{'COUNTRY'|translate}}" value="" ng-model="LEAD.COUNTRY">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'DESCRIPTION' | translate }}
+                            </span>
+                            <input type="text" placeholder="{{'DESCRIPTION' | translate }}" value="" ng-model="LEAD.DESCRIPTION">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'E_MAIL' |translate }}
+                            </span>
+                            <input type="text" placeholder="{{'E_MAIL' |translate }}" value="" ng-model="LEAD.E_MAIL">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'FACEBOOK_ID'|translate}}
+                            </span>
+                            <input type="text" placeholder="{{'FACEBOOK_ID'|translate}}" value="" ng-model="LEAD.FACEBOOK_ID">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'HEADCOUNT' | translate }}
+                            </span>
+                            <input type="text" placeholder="{{'HEADCOUNT' | translate }}" value="" ng-model="LEAD.HEADCOUNT">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'INSTAGRAM_ID' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'INSTAGRAM_ID' | translate}}" value="" ng-model="LEAD.INSTAGRAM_ID">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'PHONE_1'|translate}}
+                            </span>
+                            <input type="text" placeholder="{{'PHONE_1'|translate}}" value="" ng-model="LEAD.PHONE_1">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'PHONE_2'|translate}}
+                            </span>
+                            <input type="text" placeholder="{{'PHONE_2'|translate}}" value="" ng-model="LEAD.PHONE_2">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'REGION' |translate}}
+                            </span>
+                            <input type="text" placeholder="{{'REGION' |translate}}" value="" ng-model="LEAD.REGION">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'TWITTER_ID' | translate}}
+                            </span>
+                            <input type="text" placeholder="{{'TWITTER_ID' | translate}}" value="" ng-model="LEAD.TWITTER_ID">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{USER_ID|translate}}
+                            </span>
+                            <input type="text" placeholder="{{USER_ID|translate}}" value="" ng-model="LEAD.USER_ID">
+                        </div>
+                        <div class="item item-input">
+                            <span class="input-label">
+                                {{'WEBSITE' |translate}}
+                            </span>
+                            <input type="text" placeholder="{{'WEBSITE' |translate}}" value="" ng-model="LEAD.WEBSITE">
+                        </div>
+                    </div>
+                    <button class="button button-positive button-block button-clear icon-right ion-checkmark"
+                    ng-click="find()" ng-disabled="myForm.userName.$error.required || myForm.LAST_NAME.$error.required">
+                        {{'SUBMIT' |translate}}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</div>

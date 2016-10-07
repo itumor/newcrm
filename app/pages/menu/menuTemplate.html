@@ -1,0 +1,95 @@
+<div ng-controller="menu" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="">
+        <img width="" height="100px" src="files/images/crm23.jpg" class="img-default img-responsive"
+        alt="Image error">
+        <div>
+            <div class="row">
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-person"
+                    menu-close="" ng-click="Headerf(&quot;Contact&quot;)" navigate-to="USER_CONTACTS">
+                        Contact
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-flag"
+                    menu-close="" ng-click="Headerf(&quot;Events&quot;)" navigate-to="EVENT_LIST">
+                        Events
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-link"
+                    menu-close="" ng-click="Headerf(&quot;Lead&quot;)" navigate-to="LEAD_LIST_Oracle">
+                        Lead
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-briefcase"
+                    menu-close="" ng-click="Headerf(&quot;Client&quot;)" navigate-to="CLIENT_LIST">
+                        Client
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-ios-calendar-outline"
+                    menu-close="" ng-click="Headerf(&quot;Calendar&quot;)" navigate-to="fullcalendar">
+                        Calendar
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-arrow-graph-up-right"
+                    menu-close="" ng-click="Headerf(&quot;chart&quot;)" navigate-to="chartjs">
+                        chart
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-arrow-graph-up-right"
+                    menu-close="" ng-click="Headerf(&quot;User Profile&quot;)" navigate-to="User_Profile">
+                        User Profile
+                    </button>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-document-text"
+                    menu-close="" ng-click="Headerf(&quot;chart&quot;)" navigate-to="NOTE_LIST">
+                        Notes
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-briefcase"
+                    menu-close="" ng-click="Headerf(&quot;Client&quot;)" navigate-to="Client_LIST" ng-hide="true">
+                        Client
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-ios-email-outline"
+                    menu-close="" ng-click="Headerf(&quot;mailgun&quot;)" navigate-to="EVENT_CREATE"
+                    ng-hide="true">
+                        Mail
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-arrow-graph-up-left"
+                    menu-close="" ng-click="Headerf(&quot;Proposal&quot;)" navigate-to="Opportunity_LIST"
+                    ng-hide="true">
+                        Proposal
+                    </button>
+                    <button class="button button-positive button-block button-clear icon-left ion-soup-can-outline"
+                    menu-close="" ng-click="Headerf(&quot;Product&quot;)" navigate-to="Product_LIST"
+                    ng-hide="true">
+                        Product
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive button-block button-clear icon-left ion-briefcase"
+                    menu-close="" ng-click="Headerf(&quot;push_notifications&quot;)" navigate-to="push_notifications"
+                    ng-hide="true">
+                        push_notifications
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</div>

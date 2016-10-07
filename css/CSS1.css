@@ -1,0 +1,26 @@
+@media (min-width: 680px) {
+  .mymodal {  
+     width: 5%; 
+     height: 5%; 
+     top: 5%; 
+     left: 5%; 
+     right: 5%; 
+     bottom: 5%;
+  }
+}
+
+
+.modal {
+ width: 90%;
+  min-height: 0 !important;
+  height: 30% !important;
+  top: 25%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+

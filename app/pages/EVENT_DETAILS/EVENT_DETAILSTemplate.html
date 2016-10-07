@@ -1,0 +1,87 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="EVENT_DETAILS" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <i class="aio-icon-component
+    aio-icon-component-md icon ion-document-text positive" ng-click="NOTES()">
+    </i>
+    <div class="card">
+        <div class="item-divider item">
+            Event Details
+        </div>
+        <div class="item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            TITLE
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.TITLE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            TYPE
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.TYPE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            DESCRIPTION
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.DESCRIPTION}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            START dATE
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.STARTDATE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            END DATE
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.ENDDATE}}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            STATUS
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{EVENT.STATUS}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

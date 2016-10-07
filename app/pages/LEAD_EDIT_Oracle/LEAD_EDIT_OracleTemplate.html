@@ -1,0 +1,158 @@
+<div ng-controller="LEAD_EDIT_Oracle" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="">
+        <div class="card">
+            <div class="item-divider item">
+                Contact Edit
+            </div>
+            <div class="item">
+                <div class="item item-input">
+                    <span class="input-label">
+                        NAME
+                    </span>
+                    <input type="text" placeholder="NAME" value="{{LEAD.NAME}}" ng-model="LEAD.NAME">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        SOURCE
+                    </span>
+                    <input type="text" placeholder="SOURCE" value="{{LEAD.SOURCE}}" ng-model="LEAD.NAME">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        NOTES
+                    </span>
+                    <input type="text" placeholder="NOTES" value="{{LEAD.NOTES}}" ng-model="LEAD.NOTES">
+                </div>
+                <div class="item item-input item-select ">
+                    <div class="input-label">
+                        STATUS
+                    </div>
+                    <select ng-model="LEAD.STATUS">
+                        <option value="Contacted">
+                            Contacted
+                        </option>
+                        <option value="Not Contacted">
+                            Not Contacted
+                        </option>
+                        <option value="Cancelled">
+                            Cancelled
+                        </option>
+                    </select>
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        INDUSTRY
+                    </span>
+                    <input type="text" placeholder="INDUSTRY" value="{{LEAD.INDUSTRY}}" ng-model="LEAD.INDUSTRY">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        Ann Revenue:
+                    </span>
+                    <input type="text" placeholder="Ann Revenue" value="{{LEAD.ANN_REVENUE}}" ng-model="LEAD.ANN_REVENUE">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        Address
+                    </span>
+                    <input type="text" placeholder="Address" value="{{LEAD.ADDRESS}}" ng-model="LEAD.ADDRESS">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        ID
+                    </span>
+                    <input type="text" placeholder="ID" value="{{LEAD.ID}}" ng-model="LEAD.ID">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        CITY
+                    </span>
+                    <input type="text" placeholder="CITY" value="{{LEAD.CITY}}" ng-model="LEAD.CITY">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        COUNTRY
+                    </span>
+                    <input type="text" placeholder="COUNTRY" value="{{LEAD.COUNTRY}}" ng-model="LEAD.COUNTRY">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        DESCRIPTION
+                    </span>
+                    <input type="text" placeholder="DESCRIPTION" value="{{LEAD.DESCRIPTION}}" ng-model="LEAD.DESCRIPTION">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        EMAIL
+                    </span>
+                    <input type="text" placeholder="EMAIL" value="{{LEAD.E_MAIL}}" ng-model="LEAD.E_MAIL">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        FACEBOOK ID
+                    </span>
+                    <input type="text" placeholder="FACEBOOK ID" value="{{LEAD.FACEBOOK_ID}}" ng-model="LEAD.FACEBOOK_ID">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        HEADCOUNT
+                    </span>
+                    <input type="text" placeholder="HEADCOUNT" value="{{LEAD.HEADCOUNT}}" ng-model="LEAD.HEADCOUNT">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        INSTAGRAM ID
+                    </span>
+                    <input type="text" placeholder="INSTAGRAM ID" value="{{LEAD.INSTAGRAM_ID}}" ng-model="LEAD.INSTAGRAM_ID">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        PHONE 1
+                    </span>
+                    <input type="text" placeholder="PHONE 1" value="{{LEAD.PHONE_1}}" ng-model="LEAD.PHONE_1">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        PHONE 2
+                    </span>
+                    <input type="text" placeholder="PHONE 2" value="{{LEAD.PHONE_2}}" ng-model="LEAD.PHONE_2">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        REGOIN
+                    </span>
+                    <input type="text" placeholder="REGION" value="{{LEAD.REGION}}" ng-model="LEAD.REGION">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        STREET
+                    </span>
+                    <input type="text" placeholder="STREET" value="{{LEAD.STREET}}" ng-model="LEAD.STREET">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        TWITTER ID
+                    </span>
+                    <input type="text" placeholder="TWITTER ID" value="{{LEAD.TWITTER_ID}}" ng-model="LEAD.TWITTER_ID">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        USER ID
+                    </span>
+                    <input type="text" placeholder="USER ID" value="{{LEAD.USER_ID}}" ng-model="LEAD.USER_ID">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        WEBSITE
+                    </span>
+                    <input type="text" placeholder="WEBSITE" value="{{LEAD.WEBSITE}}" ng-model="LEAD.WEBSITE">
+                </div>
+                <button class="button button-positive button-block button-clear icon-right ion-checkmark"
+                ng-click="Edit()">
+                    submit
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</div>

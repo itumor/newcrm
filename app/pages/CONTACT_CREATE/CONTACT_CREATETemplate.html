@@ -1,0 +1,174 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="CONTACT_CREATE" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="card">
+        <div class="item-divider item">
+            {{'CONTACT_CREATE'|translate}}
+        </div>
+        <div class="item">
+            <form name="myForm">
+                <div class="list">
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'Full_Name' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{ 'Full_Name' |translate }}" value="" ng-model="CONTACT.FULLNAME">
+                    </div>
+                    <h6 ng-show="myForm.userName.$error.required" class="assertive">
+                        Required
+                    </h6>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'DESCRIPTION' | translate }}
+                        </span>
+                        <input type="text" placeholder="{{'DESCRIPTION' | translate }}" value="" ng-model="CONTACT.DESCRIPTION">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'SOURCE' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'SOURCE' | translate}}" value="" ng-model="CONTACT.SOURCE">
+                    </div>
+                    <div class="item item-input item-select ">
+                        <div class="input-label">
+                            {{ 'STATUS'| translate }}
+                        </div>
+                        <select ng-model="CONTACT.STATUS">
+                            <option value="Contacted">
+                                {{'CONTACTED ' | translate}}
+                            </option>
+                            <option value="Not Contacted">
+                                {{'NOT_CONECTED' |translate}}
+                            </option>
+                            <option value="Cancelled">
+                                {{'CANCELLED' | translate }}
+                            </option>
+                            <option>
+                                Option
+                            </option>
+                        </select>
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'TITLE' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'TITLE' |translate}}" value="" ng-model="CONTACT.TITLE"
+                        required="" name="Title">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'INDUSTRY' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'INDUSTRY' | translate}}" value="" ng-model="CONTACT.INDUSTRY">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'WEBSITE'| translate}}
+                        </span>
+                        <input type="text" placeholder="{{'WEBSITE'| translate}}" value="" ng-model="CONTACT.WEBSITE">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'RATING' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'RATING' |translate}}" value="" ng-model="CONTACT.RATING"
+                        name="Rating">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'PHONE_1'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'PHONE_1'|translate}}" value="" ng-model="CONTACT.PHONE_1">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'PHONE_2'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'PHONE_2'|translate}}" value="" ng-model="CONTACT.PHONE_2">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'E_MAIL' |translate }}
+                        </span>
+                        <input type="text" placeholder="{{'E_MAIL' |translate }}" value="" ng-model="CONTACT.E_MAIL">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'ADDRESS' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'ADDRESS' |translate}}" value="" ng-model="CONTACT.ADDRESS">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'REGION' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'REGION' |translate}}" value="" ng-model="CONTACT.REGION">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'CITY' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'CITY' | translate}}" value="" ng-model="CONTACT.CITY">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'COUNTRY'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'COUNTRY'|translate}}" value="" ng-model="CONTACT.COUNTRY">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'HEADCOUNT' | translate }}
+                        </span>
+                        <input type="text" placeholder="{{'HEADCOUNT' | translate }}" value="" ng-model="CONTACT.HEADCOUNT">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'DOB' |translate}}
+                        </span>
+                        <input type="text" placeholder="{{'DOB' |translate}}" value="" ng-model="CONTACT.DOB">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'TWITTER_ID' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'TWITTER_ID' | translate}}" value="" ng-model="CONTACT.TWITTER_ID">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'INSTAGRAM_ID' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'INSTAGRAM_ID' | translate}}" value="" ng-model="CONTACT.INSTAGRAM_ID">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'FACEBOOK_ID'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'FACEBOOK_ID'|translate}}" value="" ng-model="CONTACT.FACEBOOK_ID">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'NOTES' | translate}}
+                        </span>
+                        <input type="text" placeholder="{{'NOTES' | translate}}" value="" ng-model="CONTACT.NOTES">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'OWNER '|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'OWNER '|translate}}" value="" ng-model="CONTACT.OWNER">
+                    </div>
+                    <div class="item item-input">
+                        <span class="input-label">
+                            {{'MAIN_CONTACT'|translate}}
+                        </span>
+                        <input type="text" placeholder="{{'MAIN_CONTACT'|translate}}" value="" ng-model="CONTACT.MAIN_CONTACT">
+                    </div>
+                </div>
+                <button class="button button-positive button-block button-clear icon-right ion-checkmark"
+                ng-click="FIND()" ng-disabled="myForm.userName.$error.required || myForm.LAST_NAME.$error.required">
+                    {{'SUBMIT' |translate}}
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

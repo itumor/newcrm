@@ -1,0 +1,39 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="NOTE_DETAILS" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div class="button-bar">
+        <button class="button button-positive button-block icon ion-edit" ng-click="EDIT()">
+        </button>
+        <button class="button button-positive button-block icon ion-android-delete" ng-click="DELETE()">
+        </button>
+    </div>
+    <div class="card">
+        <div class="item-divider item">
+            Note Details
+        </div>
+        <div class="item">
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            {{NOTE.NOTE}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            Created At
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            {{NOTE.CREATED_AT}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

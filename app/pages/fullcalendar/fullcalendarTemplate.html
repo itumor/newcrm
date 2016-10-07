@@ -1,0 +1,41 @@
+<div show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+ng-controller="fullcalendar" ng-cloak ng-init="init()" class="aio-empty-screen padding overflow-scroll">
+    <div>
+        <div class="row">
+            <div class="col col-25">
+                <button class="button button-icon button-inline button-small icon ion-chevron-left"
+                ng-click="prev()">
+                </button>
+                <button class="button button-icon button-inline button-small icon ion-chevron-right"
+                ng-click="next()">
+                </button>
+            </div>
+            <div class="col">
+                <div class="button-bar bar-positive">
+                    <button class="button button-block" ng-click="changeView('month')">
+                        month
+                    </button>
+                    <button class="button button-block" ng-click="changeView('agendaWeek')">
+                        Week
+                    </button>
+                    <button class="button button-block" ng-click="changeView('agendaDay')">
+                        Day
+                    </button>
+                    <button class="button button-block" ng-click="changeView('listWeek')">
+                        list
+                    </button>
+                    <button class="button button-block" ng-click="today()">
+                        today
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+        <body>
+            <div id='calendar'>
+            </div>
+        </body>
+    </div>
+</div>

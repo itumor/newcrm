@@ -1,0 +1,39 @@
+<div ng-controller="User_Profile" ng-cloak ng-init="init()">
+    <ion-content show-header="true" show-footer="true" show-top-tabs="true" show-tabs="true"
+    overflow-scroll="">
+        <div class="card">
+            <div class="item-divider item">
+                User profile
+            </div>
+            <div class="item">
+                <div class="item item-input">
+                    <span class="input-label">
+                        Email
+                    </span>
+                    <input type="text" placeholder="Email" value="{{nuserprofile.email}}" ng-readonly="true">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        Country
+                    </span>
+                    <input type="text" placeholder="Country" value="{{nuserprofile.country}}" ng-model="nuserprofile.country">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        Full Name
+                    </span>
+                    <input type="text" placeholder="Full Name" value="{{nuserprofile.Full_Name}}" ng-model="nuserprofile.Full_Name">
+                </div>
+                <div class="item item-input">
+                    <span class="input-label">
+                        Title
+                    </span>
+                    <input type="text" placeholder="Title" value="{{nuserprofile.Title}}" ng-model="nuserprofile.Title">
+                </div>
+                <button class="button button-block" ng-click="Update()">
+                    Update
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</div>
